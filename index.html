@@ -19,7 +19,7 @@ body {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=file] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -75,14 +75,24 @@ a {
     <p>Please fill in this form to create an account.</p>
     <hr>
 
+    <label for="firstName"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstName" id="firstName">
+
+    <label for="lastName"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lastName" id="lastName">
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" id="address">
+
+    <label for="avatar"><b>Profile Picture (PNG or JPEG/JPG)</b></label>
+    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
